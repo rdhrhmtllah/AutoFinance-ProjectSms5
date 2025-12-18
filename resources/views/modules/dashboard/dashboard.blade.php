@@ -2,37 +2,71 @@
 
 @section('content')
 
-<h2 class="text-3xl font-semibold text-gray-800 mb-8">Dashboard</h2>
+<!-- Page Title -->
+<div class="mb-6">
+    <h1 class="text-2xl font-bold text-gray-800">
+        Dashboard
+    </h1>
+    <p class="text-gray-500 text-sm">
+        Ringkasan keuangan Anda saat ini
+    </p>
+</div>
 
-{{-- STATISTIC CARDS --}}
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+<!-- Summary Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
 
-    {{-- Total Pasien --}}
-    <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
-        <h3 class="text-gray-600 text-sm font-medium">Total Pasien</h3>
-        <p class="text-3xl font-bold text-blue-600 mt-2">128</p>
-        <span class="text-xs text-gray-400">Update hari ini</span>
+    <!-- Pemasukan -->
+    <div class="bg-white rounded-xl shadow p-6">
+        <p class="text-sm text-gray-500">Total Pemasukan</p>
+        <h2 class="text-2xl font-bold text-green-600 mt-2">
+            Rp 5.000.000
+        </h2>
+        <p class="text-xs text-gray-400 mt-1">
+            Bulan ini
+        </p>
     </div>
 
-    {{-- Pasien IGD --}}
-    <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
-        <h3 class="text-gray-600 text-sm font-medium">Pasien IGD</h3>
-        <p class="text-3xl font-bold text-red-500 mt-2">32</p>
-        <span class="text-xs text-gray-400">Dalam penanganan</span>
+    <!-- Pengeluaran -->
+    <div class="bg-white rounded-xl shadow p-6">
+        <p class="text-sm text-gray-500">Total Pengeluaran</p>
+        <h2 class="text-2xl font-bold text-red-500 mt-2">
+            Rp 3.200.000
+        </h2>
+        <p class="text-xs text-gray-400 mt-1">
+            Bulan ini
+        </p>
     </div>
 
-    {{-- Rawat Inap --}}
-    <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
-        <h3 class="text-gray-600 text-sm font-medium">Rawat Inap</h3>
-        <p class="text-3xl font-bold text-green-600 mt-2">58</p>
-        <span class="text-xs text-gray-400">Semua kamar</span>
+    <!-- Saldo -->
+    <div class="bg-white rounded-xl shadow p-6">
+        <p class="text-sm text-gray-500">Saldo</p>
+        <h2 class="text-2xl font-bold text-indigo-600 mt-2">
+            Rp 1.800.000
+        </h2>
+        <p class="text-xs text-gray-400 mt-1">
+            Tersisa
+        </p>
     </div>
 
-    {{-- Pasien Pulang --}}
-    <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
-        <h3 class="text-gray-600 text-sm font-medium">Pasien Pulang</h3>
-        <p class="text-3xl font-bold text-gray-700 mt-2">38</p>
-        <span class="text-xs text-gray-400">Data minggu ini</span>
+    <!-- Analisis AI -->
+    <div class="bg-indigo-600 rounded-xl shadow p-6 text-white">
+        <p class="text-sm opacity-90">Analisis AI</p>
+        <p class="mt-3 text-sm leading-relaxed">
+            Pengeluaran makan meningkat 20%.
+            Pertimbangkan mengatur budget harian.
+        </p>
+    </div>
+
+</div>
+
+<!-- Grafik / Info Tambahan -->
+<div class="bg-white rounded-xl shadow p-6">
+    <h3 class="text-lg font-semibold text-gray-700 mb-4">
+        Grafik Keuangan (Dummy)
+    </h3>
+
+    <div class="h-48 flex items-center justify-center text-gray-400">
+        Grafik pemasukan & pengeluaran akan ditampilkan di sini
     </div>
 </div>
 
