@@ -11,3 +11,10 @@ Route::get('/login', function () {
 Route::get('/formInput', function () {
     return view('modules/formInput/formInput');
 })->name('formInput');
+Route::get('/login', function () {
+    return view('modules.login.login');
+});
+
+Route::get('/register', function () {
+    return view('modules.login.register');
+});
